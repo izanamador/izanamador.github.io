@@ -50,6 +50,9 @@ h1 {
     color: white;
     font-size: 4em;
 }
+h2 {
+    font-size:2em;
+}
 .bg {
     height: 100%;
     width: 100%;
@@ -101,6 +104,7 @@ header {
 }
 header > h2 {
     color: var(--hero-color);
+    font-size: 1.5em;
 }
 header.sticky {
     position: fixed;
@@ -124,7 +128,7 @@ section, footer {
     
     position: relative;
 
-    padding: 3em 3em;
+    padding: 4em 3em;
     box-sizing: border-box;
 
     background-color: var(--light-bg);
