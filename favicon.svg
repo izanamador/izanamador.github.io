@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="128"
+   height="128"
+   viewBox="0 0 33.866666 33.866668"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="/home/rgon/projectsGit/rgon.github.io/src/logo/favicon.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4418722"
+     inkscape:cx="361.62417"
+     inkscape:cy="47.293411"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="3378"
+     inkscape:window-height="1376"
+     inkscape:window-x="1502"
+     inkscape:window-y="632"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="bg"
+     style="opacity:0.99989844">
+    <circle
+       style="fill:#215f4e;stroke-width:0.26458299;fill-opacity:1"
+       id="path856"
+       cx="16.933332"
+       cy="16.933332"
+       r="16.933332"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.57780075px;line-height:1.45000005;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, Bold';letter-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.26458299"
+       x="4.0734668"
+       y="25.162987"
+       id="text835"><tspan
+         sodipodi:role="line"
+         id="tspan833"
+         x="4.0734668"
+         y="25.162987"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.57780075px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:#f2f2f2;stroke-width:0.26458299">IA</tspan></text>
+  </g>
+</svg>
