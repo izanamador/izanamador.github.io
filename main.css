@@ -1,0 +1,252 @@
+/*
+** https://izanamador.github.com
+** quick and dirty coding by https://rgon.es
+**
+** March 2021
+*/
+
+/*
+** --- MAIN PAGE STYLING ---
+*/
+body, html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    line-height: 1.2;
+
+    /* ---- PAGE CONFIGURATION ---- */
+    --text-color: rgb(75,75,75);
+    --text-color-filler: rgb(90,90,90);
+
+    --hero-color: rgb(240,240,240);
+    --text-color-dark: rgb(202, 202, 202);
+    
+    --dark-bg: rgb(40,40,40);
+    --light-bg: var(--hero-color);
+    /* ----    -----------    ---- */
+
+    color: var(--text-color);
+    --bg: var(--light-bg);
+}
+a {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--text-color);
+    border-bottom: 1px dashed var(--text-color);
+    margin-bottom: -1px;
+    transition: .2s border-color, .2s border-style, .2s transform;
+}
+a:hover {
+    /*border-bottom: 1px solid var(--text-color) !important;*/
+    transform: scale(1.05);
+}
+a.hidden {
+    border: none;
+}
+h1 {
+    color: white;
+    font-size: 4em;
+}
+.bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    z-index: -1;
+}
+.content {
+    max-width: 1000px;
+    width: 100%;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    position: relative;
+}
+.centered {
+    text-align: center;
+}
+
+br.x2 {
+    margin-bottom: 1em;
+}
+
+.black img.icon {
+    filter: invert(100%) brightness(78%);
+}
+
+/*
+** --- GENERIC COMPONENTS ---
+*/
+header {
+    height: 70px;
+    width: 100%;
+    padding: 0 2em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header > h2 {
+    color: var(--hero-color);
+}
+header.sticky {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+
+    transition: .2s opacity, .2s background-color;
+}
+header:not(.expanded) {
+    opacity: .5;
+    background-color: transparent !important;
+}
+section, footer {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    position: relative;
+
+    padding: 3em 3em;
+    box-sizing: border-box;
+
+    background-color: var(--light-bg);
+}
+
+@media screen and (max-width: 740px) {
+    section, footer {
+        padding: 3em 2em;
+    }
+}
+section.black, footer.black, header.black {
+    /* Invert color scheme*/
+    background-color: var(--text-color);
+    --bg: var(--text-color);
+    color: var(--text-color-dark);
+
+    background-color: var(--dark-bg);
+    --text-color: var(--text-color-dark);
+}
+
+footer {
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+footer > .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+footer > .content:not(:first-child) {
+    margin-top: 2em;
+}
+footer > .content > * {
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 740px) {
+    footer > .content {
+        flex-direction: column;
+    }
+}
+footer img.icon {
+    height: 75px;
+    width: 150px;
+}
+.contactLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactLinks a:first-child {
+    font-size: 2rem;
+}
+@media screen and (max-width: 450px) {
+    .contactLinks a:first-child {
+        font-size: 1.5rem;
+    }
+}
+.contactLinks a:last-child {
+    margin-top: 1rem;
+}
+
+/*
+** --- INDEX Page specific ---
+** Move to a sepparate (index.css) file when adding more pages
+*/
+
+.prose {
+    align-self: flex-start;
+    text-align: left;
+
+    line-height: 2;
+    margin: 2em 0;
+
+    max-width: 700px;
+    width:90%;
+
+    box-sizing: border-box;
+
+    font-weight: 300;
+    color: var(--text-color-filler);
+    font-size: .95rem;
+    line-height: 2.5;
+}
+.prose:last-child {
+    margin-bottom: 0;
+}
+.prose.right {
+    align-self: flex-end;
+    text-align: right;
+
+    box-sizing: border-box;
+}
+.prose b {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+.prose em, .prose .em {
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-style: normal;
+}
+
+.hero {
+    height: 55vh;
+    min-height: 600px;
+    flex-direction: row;
+    background-color: transparent;
+
+    flex-wrap: wrap;
+}
+.heroBanner {
+    border: .15em solid var(--hero-color);
+    color: var(--hero-color);
+    padding: .8em 1em;
+    font-size: 2em;
+    max-width: 400px;
+    border-radius: .8em;
+}
+.about {
+    line-height: 1.5;
+    max-width: 800px;
+}
