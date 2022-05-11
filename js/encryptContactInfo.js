@@ -180,7 +180,7 @@ class PhoneNumber {
             return number
         } else {
             if (this.prefixStyle === '(+') {
-                return this.prefixStyle + this.prefix + ')' + (this.spaceOutPhoneNumber ? ' ' : '') + number
+                return this.prefixStyle + this.prefix + ')' + (spaceOutPhoneNumber ? ' ' : '') + number
             } else return this.prefixStyle + this.prefix + ' ' + number
         }
     }
