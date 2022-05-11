@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="fonts/montserrat/Montserrat.css" />
     <link rel="stylesheet" href="main.css" />
     <script src="js/scrollTools.js"></script>
+    <script src="js/encryptContactInfo.js"></script>
 </head>
 <body>
     <header class="sticky black">
@@ -99,14 +100,19 @@
         <div class="content flex">
             <a class="hidden" href="https://github.com/izanamador"><img class="icon" src="img/github.svg"></a>
             <div class="contactLinks">
-                <a class="hidden" href="maillto:izan.amador@gmail.com?Subject=¡Hola Izan!">izan.amador@gmail.com</a>
-                <a class="hidden" href="tel:(+34)606137446">+34 606 13 74 46</a>
+                <a class="hidden encMail" href="maillto:nospam@example.com?Subject=¡Hola Izan!">kzn6.u5ouqr@imn1l.eoz</a>
+                <a class="hidden encPhone" href="tel:(+34)606137446">(+54)80jk3rnin</a>
             </div>
             <a class="hidden" href="https://www.linkedin.com/in/izanamador/"><img class="icon" src="img/linkedin.svg"></a>
         </div>
     </footer>
 
 <script>
+    window.addEventListener('load', () => {
+        decryptAllAddressesOnPage('cantautor')
+        decryptAllPhoneNumbersOnPage('cantautor')
+    })
+
     detectScroll(document.querySelector('h1'), (e) => {
         console.log(e.scrolled)
         if (e.scrolled) {
